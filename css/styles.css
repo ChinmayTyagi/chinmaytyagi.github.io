@@ -1,0 +1,165 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+	display: table;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../resources/bg4.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.header-button {
+	border-radius: 0;
+	border-width: 2px;
+	border-color: #fff;
+	color: #fff;
+	background-color: rgb(255, 255, 255, 0.0);
+	margin: 0px 5px;
+	font-weight: 300;
+	width: 100px;
+}
+
+.main,
+.projects {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4.5em;
+	color: #fff;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.main p {
+	color: #fff;
+	font-weight: 300;
+}
+
+.projects {
+	display: none;
+	padding-left: 28%;
+	padding-right: 29%;
+}
+
+.projects .card {
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 2px;
+	padding: 1em;
+}
+
+.projects .header {
+	color: black;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.projects .title {
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 16px;
+	text-align: left;
+}
+
+.projects .body {
+	text-align: left;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 16px;
+}
+
+.projects .close-btn {
+	color: #BDBDBD;
+	cursor: pointer;
+	float: left;
+}
+
+.projects .close-btn:hover {
+	color: #757575;
+}
+
+.social-media-icons {
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.social-media-icons a {
+	color: white;
+}
+
+.social-media-icons i {
+	padding: 14px 10px;
+}
+
+.social-media-icons a:hover .fa-linkedin,
+.social-media-icons a:active .fa-linkedin {
+	color: #0976b4;
+}
+
+.social-media-icons a:hover .fa-envelope-o,
+.social-media-icons a:active .fa-envelope-o {
+	color: #ffa930;
+}
+
+.social-media-icons a:hover .fa-github,
+.social-media-icons a:active .fa-github {
+	color: #6cc644;
+}
+
+.hvr-bounce-to-top:before {
+	background: white;
+}
+
+.hvr-bounce-to-top:hover,
+.hvr-bounce-to-top:focus,
+.hvr-bounce-to-top:active {
+	color: black;
+}
+
+.hvr-bounce-to-right:before {
+	background: white;
+}
+
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+	color: black;
+}
+
+/*------MOBILE VIEW --------*/
+@media screen and (max-width:1100px) {
+	.projects {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width:1400px) and (min-width:1100px) {
+	.projects {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
